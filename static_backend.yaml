@@ -1,0 +1,14 @@
+application: tomochikahara
+module: static-backend
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+automatic_scaling:
+  min_idle_instances: 1
+  max_pending_latency: 1s
+
+handlers:
+- url: /.*
+  script: ops.printenv.APP

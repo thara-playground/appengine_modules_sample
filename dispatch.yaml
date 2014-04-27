@@ -1,0 +1,12 @@
+application: tomochikahara
+
+dispatch:
+
+- url: "*/mobile/*"
+  module: mobile-frontend
+
+- url: "*/work/*"
+  module: static-backend
+
+- url: "*/backend/"
+  module: go-backend
